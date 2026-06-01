@@ -1,6 +1,6 @@
 /*
-Write a program to Calculate sum of first N
-natural numbers.
+Write a program to Print multiplication table of
+a given number.
 */
 
 #include <iostream>
@@ -9,18 +9,15 @@ using namespace std;
 int main()
 {
     int num;
-    int sum=0;
 
     cout << "Enter the number :: ";
     cin >> num;
 
-    for(int i=1;i<=num;i++)
+    for(int i=1;i<=10;i++)
     {
-        sum=sum+i;
+        cout << num << "*" << i << "=" << num*i << endl;
+        
     }
 
-    cout << sum << endl;
-
     return 0;
-
 }

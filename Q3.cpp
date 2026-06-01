@@ -1,6 +1,5 @@
 /*
-Write a program to Calculate sum of first N
-natural numbers.
+Write a program to Find factorial of a number
 */
 
 #include <iostream>
@@ -9,18 +8,17 @@ using namespace std;
 int main()
 {
     int num;
-    int sum=0;
+    int fact=1;
 
     cout << "Enter the number :: ";
     cin >> num;
 
     for(int i=1;i<=num;i++)
     {
-        sum=sum+i;
+        fact = fact*i;
     }
 
-    cout << sum << endl;
+    cout << fact << endl;
 
     return 0;
-
 }

@@ -1,6 +1,5 @@
 /*
-Write a program to Calculate sum of first N
-natural numbers.
+Write a program to Count digits in a number.
 */
 
 #include <iostream>
@@ -9,18 +8,18 @@ using namespace std;
 int main()
 {
     int num;
-    int sum=0;
+    int count=0;
 
     cout << "Enter the number :: ";
     cin >> num;
 
-    for(int i=1;i<=num;i++)
+    while(num>0)
     {
-        sum=sum+i;
+        num=num/10;
+        count++;
     }
 
-    cout << sum << endl;
+    cout << count << endl;
 
     return 0;
-
 }
